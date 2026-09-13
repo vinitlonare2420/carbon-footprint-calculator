@@ -1,0 +1,30 @@
+.results { margin-top: 2rem; }
+.results-summary { display: flex; justify-content: space-between; gap: 2rem; align-items: end; }
+.result-disclaimer { max-width: 17rem; font-size: .8rem; color: #d6e1d3; line-height: 1.5; }
+.result-card { position: relative; border-top: 3px solid #e6c76d; }
+.result-card.electricity { border-color: #83b9b0; }
+.result-card.waste { border-color: #dc8e68; }
+.category-key { display: inline-block; height: .7rem; width: .7rem; border-radius: 50%; background: #e6c76d; margin-right: .4rem; }
+.category-key.electricity { background: #83b9b0; }
+.category-key.waste { background: #dc8e68; }
+.chart-section, .recommendations { margin: 1.8rem 0; padding: 1.4rem; background: #174838; border-radius: .5rem; }
+.chart-section h3, .recommendations h3, .insight-panel h3 { margin: 0; font-size: 1.1rem; }
+.chart-section p { margin: .35rem 0 1rem; color: #d6e1d3; font-size: .85rem; }
+.contribution-chart { display: flex; width: 100%; min-height: 1.15rem; border-radius: 999px; overflow: hidden; background: #376455; }
+.chart-segment { min-width: 0; transition: width .25s ease; }
+.chart-segment.transportation { background: #e6c76d; }
+.chart-segment.electricity { background: #83b9b0; }
+.chart-segment.waste { background: #dc8e68; }
+.chart-legend, .recommendations ul { list-style: none; padding: 0; margin: 1rem 0 0; }
+.chart-legend { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+.chart-legend li { display: flex; align-items: center; font-size: .8rem; color: #d6e1d3; }
+.chart-legend strong { margin-left: auto; color: #fff; }
+.insight-panel { margin: 1.8rem 0; padding: 1.35rem 1.4rem; border-left: 3px solid #e6c76d; background: #1b5142; }
+.insight-panel .eyebrow, .recommendations .eyebrow { margin-bottom: .55rem; }
+.recommendations ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+.recommendations li { padding: .9rem; background: #103d31; border-radius: .4rem; }
+.recommendations strong, .recommendations span { display: block; }
+.recommendations strong { font-size: .86rem; color: #f6f3ec; }
+.recommendations span { margin-top: .4rem; font-size: .78rem; line-height: 1.5; color: #d6e1d3; }
+@media (max-width: 700px) { .results-summary { display: block; } .result-disclaimer { margin-top: 1rem; } .chart-legend, .recommendations ul { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .chart-segment { transition: none; } }

@@ -1,0 +1,13 @@
+.results { margin-top: 2rem; padding: 2rem; background: #103d31; color: #f6f3ec; border-radius: .75rem; }
+.results h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.3rem, 5vw, 4rem); letter-spacing: -.05em; margin: .2rem 0; }
+.results h2 span { font-family: 'DM Sans', Arial, sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #c7d7b1; }
+.annual-total { color: #d6e1d3; }
+.result-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.result-grid article { padding: 1rem; background: #1b5142; border-radius: .45rem; }
+.result-grid h3 { font-size: .85rem; margin: 0; color: #c7d7b1; }
+.result-grid p { font-weight: 700; font-size: 1.1rem; margin: .55rem 0; }
+.result-grid span { font-size: .78rem; color: #d6e1d3; }
+.dominant { border-top: 1px solid #47705e; padding-top: 1rem; }
+.button-secondary { background: #e6c76d; color: #163d31; }
+.button-secondary:hover { background: #f0d887; }
+@media (max-width: 700px) { .result-grid { grid-template-columns: 1fr; } }
