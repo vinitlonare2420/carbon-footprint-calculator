@@ -1,0 +1,8 @@
+html, body { min-width: 320px; overflow-x: hidden; }
+input, select, .button { max-width: 100%; }
+.button { justify-content: center; text-align: center; white-space: normal; }
+.result-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+@media (max-width: 860px) {
+  .results-summary { align-items: start; }
+  .chart-legend { grid-template-columns: 1fr; }
+}
