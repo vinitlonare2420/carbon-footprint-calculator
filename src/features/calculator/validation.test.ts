@@ -11,7 +11,7 @@ describe('validateCalculator', () => {
     expect(validateCalculator({ transportMode: '', distance: '', electricity: '', wasteTreatment: '', waste: '' })).toEqual({ transportMode: 'Select a transport mode.', distance: 'Enter a travel distance value greater than or equal to 0.', electricity: 'Enter a monthly electricity value greater than or equal to 0.', wasteTreatment: 'Select an organic waste treatment.', waste: 'Enter a monthly organic waste value greater than or equal to 0.' })
   })
   it('rejects negative and invalid values', () => {
-    expect(validateCalculator({ ...validValues, distance: '-1', electricity: 'not-a-number', waste: '1000001' })).toEqual({ distance: 'Enter a travel distance value greater than or equal to 0.', electricity: 'Enter a valid monthly electricity number.', waste: 'Enter a monthly organic waste value below 1,000,000.' })
+    expect(validateCalculator({ ...validValues, distance: '-1', electricity: 'not-a-number', waste: '1000001' })).toEqual({ distance: 'Enter a travel distance value greater than or equal to 0.', electricity: 'Enter a valid monthly electricity number.', waste: 'Enter a monthly organic waste value below 10,00,000.' })
   })
   it('accepts valid decimal activities', () => {
     expect(validateCalculator({ ...validValues, distance: '12.5', electricity: '140.75', waste: '3.25' })).toEqual({})
